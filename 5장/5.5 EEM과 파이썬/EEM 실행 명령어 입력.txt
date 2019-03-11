@@ -1,0 +1,5 @@
+event manager applet HighCPU
+  event snmp oid 1.3.6.1.4.1.9.9.109.1.1.1.1.6.1 get-type exact entry-op ge entry-val 50 poll-interval 5
+  action 1.0 syslog priority notifications msg Run_HighCPU.log
+  action 2.0 cli python bootflash:scripts/high_cpu.py
+  action 3.0 syslog priority notifications msg Complete_HighCPU.log

@@ -1,0 +1,5 @@
+event manager applet Auto-Provisioning
+  event syslog pattern 'Interface Ethernet1/24 is up in mode access'
+  action 1.0 syslog priority notifications msg Run_Python_Auto_Provisioning
+  action 2.0 cli python bootflash:scripts/auto_provisioning.py
+  action 3.0 syslog priority notifications msg Finish_Python_Auto_Provisioning

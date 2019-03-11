@@ -1,0 +1,4 @@
+aruljohn.com 에서 MAC 주소가 검색되지 않으면 auto_add_description_mac.py에서 정상 동작할 수 없습니다.
+이 코드는, 해당 URL을 통하여 데이터를 추출하기 때문입니다.
+
+사용법(URL) : aruljohn.com/mac/<MAC 주소 6자리>

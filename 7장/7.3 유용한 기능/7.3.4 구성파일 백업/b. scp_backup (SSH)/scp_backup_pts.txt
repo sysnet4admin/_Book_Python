@@ -1,0 +1,4 @@
+n9k-2(config)# event manager applet scp_backup_pts
+n9k-2(config-applet)#   event syslog pattern "Configured from vty by admin on *.*.*.*@pts*"
+Configuration accepted successfully
+n9k-2(config-applet)#   action 1 cli python bootflash:scripts/scp_backup.py
